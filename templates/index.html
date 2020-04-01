@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<title>
+    Youtube Downloader
+</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <h1>YouTube Downloader</h1>
+        <p>
+            This is my first page!
+        </p>
+    <div>
+        <h2>Download Now</h2>
+        <form action="{% url 'download' %}" method="GET">
+            <label for="fname">YouTube link</label><br>
+                <input type="text" id="flink" name="fname"><br>
+
+            <input type="radio" id="sound" name="downloader" value="sound">
+                <label for="male">MP3</label><br>
+            <input type="radio" id="video" name="downloader" value="video">
+                <label for="female">MP4</label><br>    
+            <input type="submit" value="Submit" class="button button3">
+        </form> 
+    </div>
+</body>
+
+</html>

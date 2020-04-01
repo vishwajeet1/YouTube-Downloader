@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>
+        Download page
+    </title>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        {% load static %}
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <h1 class="result">Download Page</h1><br>
+        <div class="a">
+            {% if link %}
+            <a href="{% static 'download' %}/{{cat}}/{{fname}}" class="btn" download><i class="fa fa-download"></i>Download Now</a><br>
+            {% else %}
+            <h1>Fail</h1>
+            {% endif %} 
+        </div>
+        <a href="{% url 'index' %}" class="button button3">Home</a>
+    </body>
+</html>

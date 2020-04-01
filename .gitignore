@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+
+.DS_Store
+#.gitignore
+.idea/workspace.xml
+*.pyc
+migrations/
+log/
+venv/
+
